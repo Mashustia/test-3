@@ -1,0 +1,19 @@
+@font-face {
+  font-weight: 600;
+  font-family: "Raleway";
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/subset-Raleway-SemiBold.woff2") format("woff2"),
+    url("../fonts/subset-Raleway-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Raleway";
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/subset-Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/subset-Raleway-Regular.woff") format("woff");
+}

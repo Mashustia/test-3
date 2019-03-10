@@ -1,0 +1,58 @@
+.form {
+  &__field-group {
+    display: flex;
+  }
+
+  &__select {
+    margin-bottom: 3rem;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    padding-left: 3.2em;
+    &--name {
+      margin-bottom: 3rem;
+      padding-left: 0;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 0.4em;
+    left: 0;
+    width: 0.6em;
+    height: 0.6em;
+    overflow: hidden;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 0.05em;
+    box-shadow: 0 0 0 0.1em map_get($palette, checkbox-shadow);
+  }
+
+  &__input {
+    &:checked + .form__checkbox {
+      background-color: map_get($palette, check-mark);
+      background-image: url(https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fcheck.svg?1550563475518);
+    }
+
+    &:focus + .form__checkbox {
+      box-shadow: 0 0 0 0.1em map_get($palette, checkbox-shadow),
+        0 0 0 0.2em map_get($palette, checkbox-focus);
+    }
+
+    &:disabled + .form__checkbox {
+      box-shadow: 0 0 0 0.1em map_get($palette, checkbox-disabled);
+    }
+
+    &:checked:disabled + .form__checkbox {
+      background-color: map_get($palette, checkbox-disabled);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    left: 0;
+  }
+}

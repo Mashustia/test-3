@@ -1,0 +1,23 @@
+// colors
+
+$palette: (
+  text: #5e5e5e,
+  text-light: #ffffff,
+  background: #fdfaf3,
+  background-dark: #112537,
+  background-overlay: rgba(0, 0, 0, 0.7),
+  title: #efb172,
+  title-hover: #e12457,
+  border: #e12457,
+  checkbox-shadow: #4a90e2,
+  checkbox-focus: #7ed321,
+  checkbox-disabled: #9b9b9b,
+  check-mark: #4a90e2,
+  check-mark-radio: #ffffff
+);
+
+// grids
+$breakpoints: (
+  md: 820px,
+  sm: 620px
+);

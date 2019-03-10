@@ -1,0 +1,48 @@
+.advantages {
+  width: 100%;
+  font-family: "Raleway", "Arial", sans-serif;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 200px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    text-align: center;
+    background-color: map_get($palette, background-dark);
+    border: 1px solid map_get($palette, border);
+
+    &:hover .advantages__title {
+      color: map_get($palette, title-hover);
+    }
+  }
+
+  //&__item {
+  //  width: calc(100% / 2);
+  //  margin-bottom: 20px;
+  //  margin-left: auto;
+  //  margin-right: auto;
+  //  flex-grow: 0;
+  //  @include grid(sm) {
+  //    margin-left: 0;
+  //    margin-right: 0;
+  //    width: calc(100% / 3);
+  //  }
+  //  @include grid(md) {
+  //    width: calc(100% / 4);
+  //  }
+  //}
+
+  &__title {
+    font-weight: 600;
+    color: map_get($palette, title);
+  }
+}
