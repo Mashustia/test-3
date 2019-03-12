@@ -1,10 +1,13 @@
-@import "normalize";
-@import "fonts";
-@import "variables";
-@import "mixin";
-@import "global";
-@import "container";
-@import "advantages";
-@import "feedback";
-@import "form";
-@import "popup";
+// global
+@import "global/normalize";
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixin";
+@import "global/global";
+
+// index.html
+@import "blocks/container";
+@import "blocks/advantages";
+@import "blocks/feedback";
+@import "blocks/form";
+@import "blocks/popup";

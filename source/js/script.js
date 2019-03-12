@@ -11,18 +11,19 @@
   var text = form.querySelector('.form__text');
 
   /**
-   * Слушатель события click на checkbox
+   * Слушатель события change на checkbox
    * @function
    */
-  function checkboxClickHandler () {
-    name.setAttribute('disabled', '')
+  function checkboxChangeHandler () {
+    name.setAttribute('disabled', '');
   };
 
   /**
-   * Слушатель события click на select
+   * Слушатель события change на select
    * @function
    */
-  function selectClickHandler (evt) {
+  function selectChangeHandler (evt) {
+    console.log('+++');
     if (evt.target.value === OPTION2 || evt.target.value === OPTION3) {
       name.removeAttribute('disabled');
       checkbox.setAttribute('disabled', '');
@@ -35,6 +36,6 @@
     }
   };
 
-  checkbox.addEventListener('click', checkboxClickHandler);
-  select.addEventListener('click', selectClickHandler);
+  checkbox.addEventListener('change', checkboxChangeHandler);
+  select.addEventListener('change', selectChangeHandler);
 })();
